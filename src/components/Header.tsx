@@ -32,6 +32,9 @@ export default function Header() {
           <Link href="/contact" className="text-gray-600 hover:text-primary">
             Contact
           </Link>
+          <Link href="/login" className="text-gray-600 hover:text-primary">
+              Login
+            </Link>
         </nav>
         <div className="flex items-center space-x-4">
           <form className="hidden md:flex">
@@ -72,6 +75,9 @@ export default function Header() {
             </Link>
             <Link href="/contact" className="text-gray-600 hover:text-primary">
               Contact
+            </Link>
+            <Link href="/login" className="text-gray-600 hover:text-primary">
+              Login
             </Link>
           </nav>
           <form className="px-4 py-2 flex">
