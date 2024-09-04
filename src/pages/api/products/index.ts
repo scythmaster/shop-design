@@ -1,9 +1,9 @@
 
 import { NextApiRequest, NextApiResponse } from 'next';
-import { ProductController } from '../../../backend/src/controllers/ProductController';
-import { errorMiddleware } from '../../../backend/src/middlewares/error.middleware';
-import { ProductRepositoryFactory } from '../../../backend/src/repositories/ProductRepositoryFactory';
-import { ProductService } from '../../../backend/src/services/ProductService';
+import { ProductController } from '../../../controllers/ProductController';
+import { errorMiddleware } from '../../../middlewares/error.middleware';
+import { ProductRepositoryFactory } from '../../../repositories/ProductRepositoryFactory';
+import { ProductService } from '../../../services/ProductService';
 
 // Dependency Injection
 const productRepository = ProductRepositoryFactory.create();
