@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Head from 'next/head';
+import Image from 'next/image';
 import Layout from '@/components/Layout';
 import { motion } from 'framer-motion';
 
@@ -24,7 +25,7 @@ export default function AboutPage() {
         <p className="text-lg mb-6">
           At Vibrant eCommerce, we are dedicated to bringing you the most vibrant and stylish products.
           Our mission is to provide high-quality items that not only look great but also inspire
-          confidence and joy. Whether you're shopping for yourself or looking for the perfect gift, 
+          confidence and joy. Whether you&apos;re shopping for yourself or looking for the perfect gift, 
           we have something for everyone.
         </p>
 
@@ -34,7 +35,13 @@ export default function AboutPage() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mb-8"
         >
-          <img src="/images/team.jpg" alt="Our Team" className="rounded-lg shadow-lg w-full" />
+          <Image 
+            src="/images/team.jpg" 
+            alt="Our Team" 
+            className="rounded-lg shadow-lg w-full" 
+            width={1200} 
+            height={800} 
+          />
         </motion.div>
 
         <p className="text-lg mb-4">
